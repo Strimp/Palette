@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+@keyframes bola {
+	40% {
+		transform: scale(1.1);	
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	user-select: none;
+	background-color: var(--color1);
+}
+
+:root {
+	--color1: white;
+	--color2: white;
+	--color3: white;
+	--color4: white;
+	--color5: black;
+}
+
+#pinto:hover {
+	transform: translateY(-10px);
+}
+
+h1 {
+	z-index: 999;
+}
+
+img {
+	width: 5%;
+	animation-name: bola;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@media (min-width: 1600px) {
+	#pinto {
+		border-radius: 40px;
+		margin: 10px;
+		border: 0.1px solid black;
+		width: 50px;
+		height: 50px;
+		display: inline-flex;
+		transition-duration: 500ms;
+	}
+
+	.paletas {
+		margin-top: 80px;
+	}
+
+	h1 {
+		margin-top: 25px;
+		margin-bottom: 10px;
+		text-align: center;
+		font-size: 75px;
+		font-family: 'Parisienne', cursive;
+	}
+
+	h2 {
+		font-family: 'Parisienne', cursive;
+		font-size: 35px;
+		text-align: center;
+	}
+
+	#pick {
+		border-radius: 3px;
+	}
+
+	.principal {
+		background-color: var(--color2);
+		box-shadow: 1px 1px 10px black;
+		margin-top: 50px;
+		margin: 30px 600px;
+		height: 500px;
+		text-align: center;
+		border-radius: 15px;
+		transition-duration: 1s;
+	}
+
+	.principal p {
+		border-radius: 15px;
+		background-color: var(--color2);
+		padding-top: 50px;
+		font-family: 'Space Mono', monospace;
+		font-size: 35px;
+	}
+
+	.ir {
+		text-align: center;
+	}
+
+	.ir button {
+		border-color: var(--color5);
+		font-family: 'Space Mono', monospace;
+		border-radius: 6px;
+		border: solid;
+		font-size: 50px;
+		transition-duration: 1s;
+	}
+
+	.ir button:hover {
+		border-color: var(--color5);
+		color: var(--color1);
+		background-color: var(--color5);
+	}
+}
+
+@media (min-width: 667px) and (max-width: 1600px) {
+	#pinto {
+		border-radius: 40px;
+		margin: 10px;
+		border: 0.1px solid black;
+		width: 50px;
+		height: 50px;
+		display: inline-flex;
+		transition-duration: 500ms;
+	}
+
+	.paletas {
+		margin-top: 80px;
+	}
+
+	h1 {
+		margin-top: 25px;
+		margin-bottom: 10px;
+		text-align: center;
+		font-size: 75px;
+		font-family: 'Parisienne', cursive;
+	}
+
+	h2 {
+		font-family: 'Parisienne', cursive;
+		font-size: 35px;
+		text-align: center;
+	}
+
+	#pick {
+		border-radius: 3px;
+	}
+
+	.principal {
+		background-color: var(--color2);
+		box-shadow: 1px 1px 10px black;
+		margin-top: 50px;
+		margin: 30px 100px;
+		height: 500px;
+		text-align: center;
+		border-radius: 15px;
+		transition-duration: 1s;
+	}
+
+	.principal p {
+		border-radius: 15px;
+		background-color: var(--color2);
+		padding-top: 50px;
+		font-family: 'Space Mono', monospace;
+		font-size: 35px;
+	}
+
+	.ir {
+		text-align: center;
+	}
+
+	.ir button {
+		border-color: var(--color5);
+		font-family: 'Space Mono', monospace;
+		border-radius: 6px;
+		border: solid;
+		font-size: 50px;
+		transition-duration: 1s;
+	}
+
+	.ir button:hover {
+		border-color: var(--color5);
+		color: var(--color1);
+		background-color: var(--color5);
+	}
+}
+
+@media (max-width: 667px) {
+
+	#pinto {
+		border-radius: 40px;
+		margin: 10px;
+		border: 0.1px solid black;
+		width: 35px;
+		height: 35px;
+		display: inline-flex;
+		transition-duration: 500ms;
+	}
+
+	.paletas {
+		margin-top: 40px;
+	}
+
+	h1 {
+		margin-top: 40px;
+		margin-bottom: 0px;
+		text-align: center;
+		font-size: 75px;
+		font-family: 'Parisienne', cursive;
+	}
+
+	h2 {
+		margin: 0px;
+		font-family: 'Parisienne', cursive;
+		font-size: 35px;
+		text-align: center;
+	}
+
+	#pick {
+		border-radius: 3px;
+	}
+
+	.principal {
+		background-color: var(--color2);
+		/*box-shadow: 1px 1px 10px black;*/
+		margin: 0px 0px;
+		height: 400px;
+		text-align: center;
+		border-radius: 15px;
+		transition-duration: 1s;
+	}
+
+	.principal p {
+		margin-top: 0px;
+		border-radius: 15px;
+		background-color: var(--color2);
+		padding-top: 50px;
+		font-family: 'Space Mono', monospace;
+		font-size: 30px;
+	}
+
+	.ir {
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.ir button {
+		border: solid;
+		border-color: var(--color5);
+		font-family: 'Space Mono', monospace;
+		border-radius: 6px;
+		font-size: 40px;
+		transition-duration: 200ms;
+	}
+
+	.ir button:hover {
+		border-color: var(--color5);
+		color: var(--color1);
+		background-color: var(--color5);
+	}
+
+	#select {
+		margin-bottom: 10px;
+	}
+
+	#hexdec {
+		font-size: 30px;
+		padding-top: 3px;
+		margin-bottom: 3px;
+	}
+}
